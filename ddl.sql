@@ -1,7 +1,7 @@
 CREATE SCHEMA member;
 CREATE SCHEMA memo;
 
-CREATE TABLE "member"."info" (
+CREATE TABLE "memo"."info" (
     memo_id bigserial PRIMARY KEY,
     author_id int8 NOT NULL,
     author_name varchar,
