@@ -42,7 +42,7 @@ jobs:
       run: rm -rf ./build/libs
       
     - name: Add properties
-      run: echo "${{ secrets.APPLICATION_DEV }}" > ./src/main/resources/application.yml
+      run: echo "${{ secrets.APPLICATION_TEST }}" > ./src/main/resources/application.yml
       
     - name: init with Gradle
       uses: gradle/gradle-build-action@v2
