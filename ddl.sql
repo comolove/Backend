@@ -1,3 +1,6 @@
+CREATE SCHEMA member;
+CREATE SCHEMA memo;
+
 CREATE TABLE "member"."like"  (
     id bigserial PRIMARY KEY,
     user_id int8 NOT NULL,
@@ -6,6 +9,6 @@ CREATE TABLE "member"."like"  (
     created timestamp DEFAULT current_timestamp
 );
 
-select * from like;
+select * from member.like;
 
-select * from mememr;
+select * from member.mememr;
