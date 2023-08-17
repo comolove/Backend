@@ -34,7 +34,7 @@ jobs:
 
     - name: Import DB seed data
       run: psql -d postgresql://postgres@localhost/postgres -f ddl.sql
-      working-directory: ./test/data
+      # working-directory: ./test/data
       env:
         PGPASSWORD: postgres
     
