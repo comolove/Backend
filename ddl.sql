@@ -7,12 +7,12 @@ CREATE TABLE "memo"."info" (
     author_name varchar,
     author_image_path varchar,
     memo_title varchar(50) NOT NULL,
-    memo_description varchar(255) NOT NULL,
-    memo_text jsonb NOT NULL,
-    memo_color varchar(50) NOT NULL,
+    memo_description varchar(255),
+    memo_text jsonb,
+    memo_color varchar(50),
     likes int8 NOT NULL DEFAULT 0,
-    created_date date NOT NULL,
-    updated_date date NOT NULL
+    created_date date,
+    updated_date date
 );
 
 CREATE TABLE "member"."auth" (
